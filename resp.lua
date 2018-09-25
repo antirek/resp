@@ -159,7 +159,7 @@ codex = {
 		end
 
 		while (curr <= size) do
-			insert(res, read_reply(sock))
+			res[curr] = read_reply(sock)
 			curr = curr + 1
 		end
 
